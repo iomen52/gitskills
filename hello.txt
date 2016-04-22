@@ -21,6 +21,8 @@ nt fm_release_inner(void)
 
 
     //james.xiao add
+
+// the bug is ok
     return ret;
 }
 
