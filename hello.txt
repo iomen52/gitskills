@@ -1,0 +1,26 @@
+nt fm_release_inner(void)
+{
+    int ret = 0;
+
+    if ( 0 == module_open_count )
+    {
+        printk_err("\n\nmodule_open_count has be zero, close() more than open()......");
+        return -1;
+    }
+    module_open_count--;
+    if ( module_open_count > 0 )
+    {
+        return 0;
+    }
+
+    ret = fm_exit_hw();
+
+    //if(p_free_clkadjust != NULL)
+    //{
+   //     p_free_clkadjust( CLKCB_ID_I2C, CLKCB_NAME_I2C );
+
+
+    //james.xiao add
+    return ret;
+}
+
