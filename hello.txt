@@ -22,7 +22,7 @@ nt fm_release_inner(void)
 
     //james.xiao add
 
-// the bug is ok
+//  git branch origin/dev gitskills1
     return ret;
 }
 
