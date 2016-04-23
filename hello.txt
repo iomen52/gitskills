@@ -22,7 +22,8 @@ nt fm_release_inner(void)
 
     //james.xiao add
 
-//  git checkout -b dev gitskills
+//  git checkout -b dev gitskills and gitskills1
+
     return ret;
 }
 
